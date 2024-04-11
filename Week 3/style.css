@@ -1,0 +1,43 @@
+*{
+    color:blueviolet
+}
+
+h1
+  {color:blue
+}
+
+/* this is a comment */
+
+/* MY css color specification */
+/* My brand color: aqua */
+
+ p{
+    color:rgb(112, 175, 175)
+ }
+
+ span{
+     color:rgb(40, 107, 85)
+ }
+
+  .My-colors { color:blue
+   }
+
+
+  #veme {
+    color:brown;
+  }
+
+  [data-emil="emil"]{
+    color: aqua;
+  }
+  
+  li > strong {
+    color:brown;
+  }
+
+  .poor-story-regular {
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
