@@ -41,6 +41,15 @@ p {
   margin-top: 100px;
 }
 
+.with-padding1 {
+  padding: 20px;
+
+}
+
+.with-padding2{
+  padding: 16px;
+}
+
 .rubik-scribble-regular {
   font-family: "Rubik Scribble", system-ui;
   font-weight: 400;
