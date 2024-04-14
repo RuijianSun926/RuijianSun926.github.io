@@ -111,7 +111,7 @@ p {
 
 .background{
   background-color: #8484A7;
-  height: 6950px;
+  height: 6900px;
   width: 1200px;
   margin: -40px auto 50px;
   padding-top: 100px;
@@ -126,7 +126,7 @@ p {
 
 .week2{
   background-color: #CBCBDA;
-  height: auto;
+  height: 3450px;
   width: 1020px;
   margin: 50px auto ;
   padding: 104px;
@@ -136,7 +136,7 @@ p {
 
 .week3{
   background-color: #CBCBDA;
-  height: auto;
+  height: 2300px;
   width: 1020px;
   margin: auto;
   padding: 104px;
