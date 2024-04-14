@@ -1,3 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Text and font styles */
 h1 {
   font-size: 50px;
 }
@@ -21,12 +29,40 @@ p {
   color:white
 }
 
+.rubik-scribble-regular {
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.single-day-regular {
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-purple {
+  color: rgb(41, 20, 82);
+}
+
+
+/* layout-content */
 .center {
   text-align: center;
 }
 
 .with-margin1 {
-  margin-bottom: 110px;
+  margin-bottom: 100px;
 }
 
 .with-margin2 {
@@ -50,32 +86,66 @@ p {
   padding: 16px;
 }
 
-.rubik-scribble-regular {
-  font-family: "Rubik Scribble", system-ui;
-  font-weight: 400;
-  font-style: normal;
+
+/* layout-total */
+.assignment-name{
+  background-color: #74749A;
+  border-radius: 35px;
+  width: 86%;
+  margin: auto;
 }
 
-.single-day-regular {
-  font-family: "Single Day", cursive;
-  font-weight: 400;
-  font-style: normal;
+.week2-part{
+  background-color: #74749A;
+  width: 134px;
+  margin: 150px auto 50px;
+  border-radius: 15px;
 }
 
-.permanent-marker-regular {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
+.week3-part{
+  background-color: #74749A;
+  width: 134px;
+  margin: 170px auto 50px;
+  border-radius: 15px;
 }
 
-.colored-background {
-    background-color: #7B7BA8;
-  }
-  
-.color-white {
-  color: white;
+.background{
+  background-color: #8484A7;
+  height: 6950px;
+  width: 1200px;
+  margin: -40px auto 50px;
+  padding-top: 100px;
+  border-radius: 81px;
+  box-sizing: border-box;
 }
 
-.color-purple {
-  color: rgb(41, 20, 82);
+.coloured-background{
+  background-color: #74749A;
+  padding: 100px;
+}
+
+.week2{
+  background-color: #CBCBDA;
+  height: auto;
+  width: 1020px;
+  margin: 50px auto ;
+  padding: 104px;
+  box-sizing: border-box;
+  border-radius: 77px;
+}
+
+.week3{
+  background-color: #CBCBDA;
+  height: auto;
+  width: 1020px;
+  margin: auto;
+  padding: 104px;
+  box-sizing: border-box;
+  border-radius: 77px;
+}
+
+.answer{
+  background-color:#AAAAC1;
+  border-radius: 21px;
+  margin: 50px;
 }
