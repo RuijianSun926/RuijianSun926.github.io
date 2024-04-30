@@ -1,27 +1,37 @@
-const myHeading = document.querySelector("h1");
+const myHeading = document.querySelector("h1")
 console.log(myHeading);
-// console.log(myHeading,textContent)
-// myHeading.textContent = "new paragraph "
-// myHeading.style.backgroundColor = "limegreen"
-for (let i =0; 1<3; 1++)
+//console.log(myHeading.textContent);
+//myHeading.textContent = "new paragraph";
+//myHeading.style.backgroundColor = "limegreen";
+//for (let i=0; i<3; i++)
 {
-    myHeading[i],textContent = "new" + i
-    myHeading[i].style.backgroundColour = "limegreen"
+    myHeading[i].textcontent ="new" + i;
+    myHeading[i].style.backgroundcolor = "limegreen"
 }
 
-myHeading.forEach(changeMe)
+myHeading.foreach(changeMe);
 
-fouction changeMe(item)
-{
-    item,clasList.and("puper-box");
+function changeMe(item){
+    //item.style.backgroundcolor = "coral"
+    item.classlist.add("purple-box");
 }
+
 const myimage = document.querySelector("#my-image");
 console.log(myimage);
-myIiage,classsList,add("round");
+myimage.classList.add("round");
 
-const myBotton =document.querySelector("#my-button");
-console.log( myBotton);
+const mybutton = document.querySelector("#my-button");
+console.log(mybutton);
 
-myBotton.addEventListener("click", toggleMe);
+mybutton.addEventListener("click", toggleMe);
 
-console.log(myImage.dataset,catname);
+function toggleMe()
+{
+ const myimage = document.querySelector("#my-image");
+console.log(myimage);
+myimage.classList.add("round");
+
+}
+
+  
+
