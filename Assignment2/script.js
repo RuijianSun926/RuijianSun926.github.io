@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var increaseVolumeButton = document.getElementById('increase-volume-button');
   var fullscreenButton = document.getElementById('fullscreen-button');
   var replayButton = document.getElementById('replay-button');
+  var rewindButton = document.getElementById('rewind-button');
+  var forwardButton = document.getElementById('forward-button');
+  var progressBarFill = document.getElementById('progress-bar-fill');
 
   playPauseButton.addEventListener('click', function () {
       if (video.paused) {
@@ -52,12 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
       video.play(); 
   });
 
-});
-document.addEventListener('DOMContentLoaded', function () {
-  var video = document.getElementById('custom-video-player');
-  var rewindButton = document.getElementById('rewind-button');
-  var forwardButton = document.getElementById('forward-button');
-
   rewindButton.addEventListener('click', function () {
       video.currentTime = 30; 
   });
@@ -65,11 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
   forwardButton.addEventListener('click', function () {
       video.currentTime = 223; 
   });
-});
-const video = document.getElementById('custom-video-player');
-const progressBarFill = document.getElementById('progress-bar-fill');
 
-video.addEventListener('timeupdate', () => {
-const percentage = (video.currentTime / video.duration) * 100;
-progressBarFill.style.width = percentage + '%';
+  video.addEventListener('timeupdate', () => {
+      const percentage = (video.currentTime / video.duration) * 100;
+      progressBarFill.style.width = percentage + '%';
+  });
 });

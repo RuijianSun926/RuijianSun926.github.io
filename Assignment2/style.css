@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+header {
+  background-color:#1c1c1c;
+  color: var(--main-text-color);
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
 .container {
   width: 100%;
   border: 2px;
@@ -11,7 +19,9 @@
 
 .controls-container {
   width: 100%;
-  border: 2px ;
+  border: 1px ;
+  display: center;
+  flex-direction: column; 
 }
 
 .container,
@@ -40,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .video-controls {
@@ -52,7 +62,7 @@
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-margin-bottom: 100px;
+margin-bottom: 175px;
 }
 
 .media-player video {
@@ -67,6 +77,11 @@ margin-bottom: 100px;
   padding: 5px;
   border-radius: 5px;
   margin: 0 5px; 
+}
+
+.center-controls {
+  margin-right: 180px;
+  margin-left: 210px;
 }
 
 #replay-button {
@@ -104,8 +119,8 @@ order: 8;
 nav {
 display: flex;
 justify-content: center;
-margin-top: 60px;
-margin-bottom: 50px;
+margin-top: 70px;
+margin-bottom: 25px;
 }
 
 .container {
@@ -117,7 +132,7 @@ background-color: #0F5F5C;
 
 .controls-container {
 text-align: center;
-padding: 20px; 
+padding: 25px; 
 background-color: #e2dcc0;
 }
 
@@ -133,4 +148,14 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-column-gap: 20px;
 grid-row-gap: 10px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.single-day-regular {
+  font-family: "Single Day", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
