@@ -17,7 +17,6 @@
 .container,
 .controls-container {
   padding: 20px;
-
 }
 
 .progress-bar {
@@ -34,7 +33,7 @@
   left: 0;
   height: 100%;
   width: 0;
-  background-color: blue;
+  background-color: #E5EC9D;
 }
 
 .custom-controls {
@@ -54,7 +53,6 @@
   max-width: 800px;
   margin: 0 auto;
 margin-bottom: 100px;
-
 }
 
 .media-player video {
@@ -98,26 +96,29 @@ order: 6;
 #increase-volume-button {
 order: 7; 
 }
+
 #fullscreen-button{
 order: 8; 
 }
+
 nav {
 display: flex;
 justify-content: center;
 margin-top: 60px;
 margin-bottom: 50px;
 }
+
 .container {
 display: flex;
 flex-direction: column;
 
-background-color: green;
+background-color: #0F5F5C;
 }
 
 .controls-container {
 text-align: center;
 padding: 20px; 
-background-color: yellow;
+background-color: #e2dcc0;
 }
 
 .box {
@@ -125,7 +126,6 @@ display: inline-block;
 text-align: left; 
 padding: 20px; 
 border: 1px; 
-
 }
 
 .text-container {

@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   forwardButton.addEventListener('click', function () {
-      video.currentTime = 127; 
+      video.currentTime = 223; 
   });
 });
 const video = document.getElementById('custom-video-player');
