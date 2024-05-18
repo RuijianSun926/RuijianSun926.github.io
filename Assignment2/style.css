@@ -1,120 +1,136 @@
-:root {
-    --primary-bg-color: #f4f4f4;
-    --text-color: #333;
-    --main-bg-color: #333;
-    --main-text-color: #fff;
-    --main-btn-bg-color: #938989;
-  }
-  
-  body,
-  h1,
-  p,
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: "Arial", sans-serif;
-    background-color: var(--primary-bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Add additional styles as needed */
-  
-  /* Create a container for the main content */
-  .container {
-    max-width: 1000px;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  /* Header styling */
-  header {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-  }
-  
-  /* Navigation styling */
-  nav {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: var(--text-color);
-  }
-  
-  /* Media player styling */
-  .media-player {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .media-player video {
-    max-width: 100%;
-  }
-  
-  .custom-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 10px;
-    width: 100%;
-  }
-  
-  .custom-controls button {
-    background-color: var(--main-btn-bg-color);
-    color: var(--main-text-color);
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .progress-bar {
-    width: 100%;
-    height: 10px;
-    background-color: #ddd;
-    margin-top: 10px;
-    overflow: hidden;
-  }
-  
-  .progress-bar span {
-    display: block;
-    height: 100%;
-    background-color: var(--main-bg-color);
-    width: 0;
-    transition: width 0.3s ease;
-  }
-  
-  /* Footer styling */
-  footer {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  border: 2px;
+}
+
+.controls-container {
+  width: 100%;
+  border: 2px ;
+}
+
+.container,
+.controls-container {
+  padding: 20px;
+
+}
+
+.progress-bar {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background-color: #ccc;
+  margin-top: 10px;
+}
+
+#progress-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: blue;
+}
+
+.custom-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.video-controls {
+  display: flex;
+  align-items: center;
+}
+
+.media-player {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+margin-bottom: 100px;
+
+}
+
+.media-player video {
+  width: 100%;
+  height: auto;
+}
+
+.custom-controls button {
+  background-color: #FFCCCB;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 5px; 
+}
+
+#replay-button {
+order: 1; 
+}
+
+#rewind-button {
+order: 3;
+}
+
+#play-pause-button {
+order: 4; 
+}
+
+#forward-button {
+order: 5;
+}
+
+#mute-unmute-button {
+order: 2; 
+}
+
+#decrease-volume-button {
+order: 6; 
+}
+
+#increase-volume-button {
+order: 7; 
+}
+#fullscreen-button{
+order: 8; 
+}
+nav {
+display: flex;
+justify-content: center;
+margin-top: 60px;
+margin-bottom: 50px;
+}
+.container {
+display: flex;
+flex-direction: column;
+
+background-color: green;
+}
+
+.controls-container {
+text-align: center;
+padding: 20px; 
+background-color: yellow;
+}
+
+.box {
+display: inline-block;
+text-align: left; 
+padding: 20px; 
+border: 1px; 
+
+}
+
+.text-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 10px;
+}
