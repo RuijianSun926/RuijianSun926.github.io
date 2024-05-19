@@ -1,3 +1,4 @@
+// Retrieve from the DOM
 document.addEventListener('DOMContentLoaded', function () {
   var video = document.getElementById('custom-video-player');
   var playPauseButton = document.getElementById('play-pause-button');
@@ -69,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
   forwardButton.addEventListener('click', function () {
       video.currentTime = 223; 
   });
-  
+
 // Update the progress bar as the video plays
   video.addEventListener('timeupdate', () => {
       const percentage = (video.currentTime / video.duration) * 100;
