@@ -1,9 +1,11 @@
+/* For the choice of webpage colors, I primarily selected colors that appear in the style of the video. The aim is to achieve a sense of visual unity */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Header styling */
 header {
   background-color:#1c1c1c;
   color: var(--main-text-color);
@@ -12,23 +14,51 @@ header {
   width: 100%;
 }
 
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 25px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+  
+  .single-day-regular {
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* The main content container */
 .container {
   width: 100%;
   border: 2px;
 }
 
-.controls-container {
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #0F5F5C;
+  }
+
+/* Media player styling */
+.media-player {
   width: 100%;
-  border: 1px ;
-  display: center;
-  flex-direction: column; 
+  max-width: 800px;
+  margin: 0 auto;
+margin-bottom: 175px;
 }
 
-.container,
-.controls-container {
-  padding: 20px;
+.media-player video {
+  width: 100%;
+  height: auto;
 }
 
+/* Progress-bar styling */
 .progress-bar {
   position: relative;
   height: 10px;
@@ -46,6 +76,19 @@ header {
   background-color: #E5EC9D;
 }
 
+/* Media controls styling */
+.controls-container {
+  width: 100%;
+  border: 1px ;
+  display: center;
+  flex-direction: column; 
+}
+
+.container,
+.controls-container {
+  padding: 20px;
+}
+
 .custom-controls {
   display: flex;
   align-items: center;
@@ -58,16 +101,9 @@ header {
   align-items: center;
 }
 
-.media-player {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-margin-bottom: 175px;
-}
-
-.media-player video {
-  width: 100%;
-  height: auto;
+.center-controls {
+  margin-right: 180px;
+  margin-left: 210px;
 }
 
 .custom-controls button {
@@ -77,11 +113,6 @@ margin-bottom: 175px;
   padding: 5px;
   border-radius: 5px;
   margin: 0 5px; 
-}
-
-.center-controls {
-  margin-right: 180px;
-  margin-left: 210px;
 }
 
 #replay-button {
@@ -116,20 +147,7 @@ order: 7;
 order: 8; 
 }
 
-nav {
-display: flex;
-justify-content: center;
-margin-top: 70px;
-margin-bottom: 25px;
-}
-
-.container {
-display: flex;
-flex-direction: column;
-
-background-color: #0F5F5C;
-}
-
+/* Footer styling */
 .controls-container {
 text-align: center;
 padding: 25px; 
@@ -148,14 +166,4 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-column-gap: 20px;
 grid-row-gap: 10px;
-}
-
-h1 {
-  font-size: 70px;
-}
-
-.single-day-regular {
-  font-family: "Single Day", cursive;
-  font-weight: 400;
-  font-style: normal;
 }

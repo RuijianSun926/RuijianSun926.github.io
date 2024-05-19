@@ -1,11 +1,26 @@
 
+<!-- I have chosen the context of "Cooking/crafting tutorial video" 
+ and here are my rationale for the semantics.I want the video to be at the center of the page with essential control buttons placed underneath for easy operation. 
+ To achieve this, I used a flexColumn layout to center the main content within an outer div on the page.
+
+Page Structure:
+- The header contains the website title.
+- The main content area includes a video player and custom control buttons.
+- The footer area includes copyright information and icon source links.
+
+Navigation Section: This section contains a title named based on the content of the video.
+
+Main Content Divided into two Sections:
+1. Media-player - It contains the video content along with a progress bar at the bottom that dynamically displays the video progress.
+2. Media-controls - It includes buttons for controlling video playback, such as play, pause, mute, and replay, totaling eight control buttons.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- add the font family of your choice -->
+    <!-- This is the external Google font (Single Day Regular) I referenced. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
@@ -13,23 +28,23 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
 </head>
-<body>
-      <!-- Header Section -->
-      <header>
-        <h2>Media Player Website</h2>
-      </header>
 
-      <!-- Navigation Section -->
+<body>
+    <!-- Header Section -->
+<header>
+  <h2>Media Player Website</h2>
+</header>
+
+    <!-- Navigation Section -->
 <div class="container">
     <nav>
         <h1 class="single-day-regular">Paper Pinwheel</h1>
-         <!-- Add or remove navigation items as needed -->
     </nav>
 
-      <!-- Main Content Section -->
-       <main class="container">
+  <!-- Main Content Section -->
+<main class="container">
 
-      <!-- Media Player Section -->
+    <!-- Media Player Section -->
     <div class="media-player">
         <video id="custom-video-player" controls>
             <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
@@ -37,7 +52,8 @@
         <div class="progress-bar">
             <span id="progress-bar-fill"></span>
         </div>
-        
+    
+    <!-- Media controls Section -->    
         <div class="custom-controls">
             <section class="video-controls">
               <div class="left-controls">
@@ -72,12 +88,18 @@
                     <img id="fullscreen-img" src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png" alt="Fullscreen Button" width="24" height="24">
                 </button>
               </div>
-                <!-- Additional Content Section -->
+              <!-- For the video control buttons, I have divided them into three areas—left, center, and right—to facilitate simpler interaction rather than clustering them all together. 
+                The left side includes the replay and mute buttons. 
+                The center section contains the play/pause and fast forward/rewind buttons. 
+                The right side includes controls for volume adjustment and fullscreen.-->
             </section>         
         </div>
     </div>
 </div>
+</main>
+
  <!-- Footer Section -->
+<footer>
 <div class="controls-container">
     <p>&copy; 2024 Media Player Website. All rights reserved</p>
     <div class="box">
@@ -105,6 +127,7 @@
         </div>
     </div>
 </div>
+</footer>
 </body>
 </html>
 
