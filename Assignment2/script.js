@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
           playPauseButton.innerHTML = '<img id="play-pause-img" src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="Play Button" width="24" height="24">';
       }
   });
+
 //   Toggle video mute/unmute, and update the button icon
   muteUnmuteButton.addEventListener('click', function () {
       if (video.muted) {
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
           muteUnmuteButton.innerHTML = '<img id="mute-unmute-img" src="https://img.icons8.com/ios-glyphs/30/speaker.png" alt="Unmute Button" width="24" height="24">';
       }
   });
+
 // Decrease/Increase the video volume
   decreaseVolumeButton.addEventListener('click', function () {
       video.volume -= 0.1;
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   increaseVolumeButton.addEventListener('click', function () {
       video.volume += 0.1;
   });
+
 //   Display the video in fullscreen mode, and added a double-click video fullscreen feature
   fullscreenButton.addEventListener('click', function () {
       if (video.requestFullscreen) {
@@ -50,19 +53,23 @@ document.addEventListener('DOMContentLoaded', function () {
           video.msRequestFullscreen();
       }
   });
+
 // The replay button resets the video to the beginning, corresponding to the material preparation stage
   replayButton.addEventListener('click', function () {
       video.currentTime = 0; 
       video.play(); 
   });
+
 // The rewind button jumps the video to 30 seconds, corresponding to the start of the making stage
   rewindButton.addEventListener('click', function () {
       video.currentTime = 30; 
   });
+
 // The fast forward button jumps the video to three minutes and 43 seconds, corresponding to the introduction of considerations after the completion of the making
   forwardButton.addEventListener('click', function () {
       video.currentTime = 223; 
   });
+  
 // Update the progress bar as the video plays
   video.addEventListener('timeupdate', () => {
       const percentage = (video.currentTime / video.duration) * 100;
