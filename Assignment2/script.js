@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
       video.volume += 0.1;
   });
 
-//   Display the video in fullscreen mode, and added a double-click video fullscreen feature
+//   Display the video in fullscreen mode
   fullscreenButton.addEventListener('click', function () {
       if (video.requestFullscreen) {
           video.requestFullscreen();
