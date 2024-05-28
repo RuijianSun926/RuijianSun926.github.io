@@ -3,9 +3,10 @@
 body {
     background-color: #1a120b;
     display: flex;
+    flex-direction: column;
     text-align: center;
     margin: auto;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     justify-content: center;
     align-items: center;
     font-family: "Space Grotesk", sans-serif;
@@ -15,18 +16,23 @@ body {
     color: #e5e5cb;
     /* color: #3c2a21; */
     font-size: 1.1rem;
+    gap: 2rem;
+    scroll-behavior: smooth;
+    /* width: 2500px; */
+    height: 2000px;
   }
   
   .outer {
     border: 2px dashed #e5e5cb7a;
     width: 400px;
-    min-height: 200px;
+    height: 200px;
     padding: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
+  }
+  
+  .inner {
+    width: 700px;
+    height: 700px;
   }
   
   button {
@@ -40,19 +46,11 @@ body {
     /* scale: 0.95; */
   }
   
-  .inner {
-    background-color: #d5cea3;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: none;
-    z-index: 1;
-  }
-  .inner p {
-    color: #3c2a21;
-  }
-  
-  #more-info.show {
-    display: block;
+  .button-container {
+    display: flex;
+    gap: 2rem;
+    width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
