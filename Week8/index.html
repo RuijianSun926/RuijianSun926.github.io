@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +15,12 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 </head>
-<body>
+  <body>
     <div class="outer">
       <section class="video-container">
-          <video id="my-video" src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" controls></video>
-          </section>
-          <section class="video-controls">
+          <video id="my-video" src="stardust.mp4" controls></video>
+      </section>
+      <section class="video-controls">
             <button id="play-pause-button">
                 <img
                 id="play-pause-img"
@@ -28,29 +29,33 @@
                 width="24"
                 height="24"
               />
-              <button id="mute-unmute-button">
+            </button>
+            <button id="mute-unmute-button">
                 <img
-                  id="mute-unmute-img"
-                  src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
-                  alt="Mute Button"
-                  width="24"
-                  height="24"
-                />
-              </button>
-              <div class="progress-bar">
-                <span id="progress-bar-fill"></span>
-              </div>
-              <button id="loop-btn">
+                id="mute-unmute-img"
+                src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+                alt="Mute unmute Button"
+                width="24"
+                height="24"
+              />
+            </button>
+            <button id="fullscreen-button">
                 <img
-                  id="loop-img"
-                  src="https://img.icons8.com/ios-glyphs/30/repeat.png"
-                  alt="Loop Button"
-                  width="24"
-                  height="24"
-                />
-              </button>
-          </section>
+                id="fullscreen-img"
+                src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+                alt="Full screen Button"
+                width="24"
+                height="24"
+              />
+            </button>
+            <div class="progress-bar">
+              <span id="progress-bar-fill"></span>
+            </div>
+      </section>
+      <section class="timeline">
+        <button id="step-1-button">Step 1</button>
+        <button id="step-2-button">Step 2</button>
       </section>
     </div>
-</body>
+  </body>
 </html>
