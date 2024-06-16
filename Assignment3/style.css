@@ -1,11 +1,15 @@
+
 body {
     background-color: #190C24;
     width: 1200px;
     margin-left: 10%;
-
 }
 
 /* 标题 */
+h1 {
+    font-size: 43px;
+  }
+
 .lemon-regular {
     font-family: "Lemon", serif;
     font-weight: 400;
@@ -16,24 +20,9 @@ body {
 }
 
 
-#img1 {
-    position: absolute;
-    top: 130px;
-    left: 210px;
-}
-
-#img2 {
-    position: absolute;
-    top: 220px;
-    left: 360px;
-}
-
-#img3 {
-    position: absolute;
-    top: 280px;
-    left: 140px;
-}
-
+#img1 {position: absolute;top: 130px;left: 210px;}
+#img2 {position: absolute;top: 220px;left: 360px;}
+#img3 {position: absolute;top: 280px;left: 140px;}
 #img4 {position: absolute;top: 380px;left: 390px;}
 #img5 {position: absolute;top: 460px;left: 170px;}
 #img6 {position: absolute;top: 600px;left: 130px;}
@@ -47,6 +36,7 @@ body {
 #img14 {position: absolute;top: 600px;left: 1270px;}
 #img15 {position: absolute;top: 520px;left: 1070px;}
 #img16 {position: absolute;top: 630px;left: 970px;}
+
 
 .pieces img {
     width: 100px;
@@ -81,9 +71,10 @@ body {
     font-weight: 400;
     font-size: large;
     text-align: center;
-    color: #000000;
+    color: #190C24;
     margin-left: 47%;
     margin-top: 5%;
     cursor: pointer;
+    border-radius: 7px
 }
 
