@@ -1,0 +1,89 @@
+body {
+    background-color: #190C24;
+    width: 1200px;
+    margin-left: 10%;
+
+}
+
+/* 标题 */
+.lemon-regular {
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+    margin-top: 10%;
+}
+
+
+#img1 {
+    position: absolute;
+    top: 130px;
+    left: 210px;
+}
+
+#img2 {
+    position: absolute;
+    top: 220px;
+    left: 360px;
+}
+
+#img3 {
+    position: absolute;
+    top: 280px;
+    left: 140px;
+}
+
+#img4 {position: absolute;top: 380px;left: 390px;}
+#img5 {position: absolute;top: 460px;left: 170px;}
+#img6 {position: absolute;top: 600px;left: 130px;}
+#img7 {position: absolute;top: 520px;left: 330px;}
+#img8 {position: absolute;top: 630px;left: 430px;}
+#img9 {position: absolute;top: 130px;left: 1230px;}
+#img10 {position: absolute;top: 220px;left: 1050px;}
+#img11 {position: absolute;top: 280px;left: 1270px;}
+#img12 {position: absolute;top: 380px;left: 1020px;}
+#img13 {position: absolute;top: 460px;left: 1230px;}
+#img14 {position: absolute;top: 600px;left: 1270px;}
+#img15 {position: absolute;top: 520px;left: 1070px;}
+#img16 {position: absolute;top: 630px;left: 970px;}
+
+.pieces img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* 拼图区 */
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #8156A6;
+    background-color: #fdf6e7;
+}
+
+.puzzle-container {
+    display: flex;
+    justify-content: center;
+}
+
+.puzzle {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+}
+.puzzle img {
+    width: 100px;
+    height: 100px;
+}
+.reset-style {
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-size: large;
+    text-align: center;
+    color: #000000;
+    margin-left: 47%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
