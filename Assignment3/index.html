@@ -1,3 +1,12 @@
+<!--For this A3 assignment, I chose to design a jigsaw puzzle game. 
+Due to the current environmental destruction and excessive hunting, 
+approximately 70 animal species disappear from the Earth every day, and about 3 species are labeled as extinct every hour.
+This planet should also belong to them. After combining this with my presentation, I decided to iterate on my concept. 
+Therefore, I decided to link my puzzle content with the protection of animals, allowing users to better understand and pay attention to the world's rare and protected animals.
+
+This assignment was completed with the help of YouTube creator Crypters Infotech's 
+"Jigsaw Puzzle using jQuery UI draggable and droppable Interactions (Part 1-Part 8)" tutorial videos: https://www.youtube.com/watch?v=6mgsMcOwfoE&t=2s-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +22,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
 
 </head>
+
+<!-- To achieve my concept, I chose 16 representative endangered animals and arranged them in a 4x4 square puzzle.
+These animals are (from top to bottom, left to right): 
+Platypus, Red Panda, Orange-bellied Parrot, Koala, 
+Sea Turtles, Polar Bear, African Elephant, Varanus komodoensis, 
+Panda, Black Rhino, Quokka, Siberian Tiger, 
+Lemurs, Golden Snub-nosed Monkey, Chinese Alligator, and Snow Leopard. 
+The ultimate goal of the puzzle is to form an image of the Earth, symbolizing that only by bringing these animals together can we have a complete planet.
+
+All animal images on the website are sourced from iStock, Unsplash, and Pixabay. The Earth image was drawn using Adobe Illustrator. -->
 
 <body>
     <h1 class="lemon-regular ">PUZZLE GAME</h1>
@@ -56,6 +75,18 @@
             <div id="box16" class="box droppable"></div>
         </div>
     </div>
+    
+<!-- During the image creation phase, I mentioned in the last class that I wanted to use a website to automatically generate a mosaic image, but the effect was not good. 
+Since I chose 16 animals, using the website's auto-generation feature would require at least hundreds of images to ensure there are no duplicates, and the images would be very small, 
+making it difficult to observe the animals in each piece. This was not the effect I wanted. Therefore, I used Photoshop to arrange the 16 images in a large square. 
+I considered the composition of each image to determine its position in the large square for example, I placed the platypus in the upper left corner according to the direction of the image. 
+For the final complete puzzle of the Earth image, I used Illustrator. I chose to draw the Atlantic side of the Earth because if I chose the other side (with Asia as the main part), 
+a large green area would be covered in the image, and the right side of the Pacific would have too much blank space, making the overall image distribution uneven. 
+Therefore, I chose to draw the Atlantic side in the center, which not only achieves a balanced left and right composition but also ensures that almost all animal images can be displayed more clearly.-->
+
+<!-- After completing the basic operations, I set up a reset button. This button allows the puzzle pieces to be randomly repositioned each time the page is refreshed,
+which I hope will reduce the feeling of repetition when the webpage is opened multiple times. -->
+
     <button id="reset" class="reset-style">Reset</button>
 
     <script src="script.js"></script>
@@ -67,7 +98,12 @@
         });
     </script>
 
-
 </body>
 
 </html>
+
+<!-- Reflecting on the process, I must admit that even though it took a lot of my time, there are still some issues with the final interaction that I couldn't resolve.
+For example, I wanted the puzzle piece to return to its original position when moved to the wrong location, but there is a chance it will fail and move to another position. 
+Sometimes, when moving a piece incorrectly, it may suddenly disappear. This is actually because the piece has moved to a lower layer beneath other pieces. 
+This assignment was very challenging for me because I was learning something completely new from scratch. 
+However, I believe this is a great start that will give me a better foundation for future projects.-->
